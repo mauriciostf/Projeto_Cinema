@@ -1,0 +1,618 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Trabalho Lucas</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
+      <link rel="stylesheet" href="./css/style.css">
+  </head>
+      <body>
+        <header class="p-3 text-bg-dark">
+          <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <i class="fas fa-home fa-2x me-2">
+                
+              </i>
+            </a>
+      
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              
+            </ul>
+            <div class="search-container">
+              <input type="text" id="searchBox" placeholder="Buscar filmes...">
+              
+          </div>
+          
+            
+      
+            <div class="text-end">
+              <button type="button" class="btn btn-outline-light me-2">Entrar</button>
+              <button type="button" class="btn btn-warning">Increver-se</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      
+
+      <!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Album example · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul> 
+    </div>
+
+    
+
+
+<main class="catalogo">
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Catálogo de Filmes</h1>
+        <p class="lead text-body-secondary"></p>
+        
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-body-tertiary">
+    <div class="fundo">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col" data-title="Prova Final">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./Album/img/ProvaFDinal.png" alt="">
+            
+            <div class="card-body">
+              <p class="Titulo">Prova Final</p>
+              <p class="tipofilmes">Terror/Ficção científica 1998 </p>
+              <div class="synopsis-container">
+                <div class="synopsis">
+                    O filme se passa em uma escola sob ameaça de invasão por criaturas do espaço. Percebendo que seus professores e colegas de classe estão se comportando de forma estranha, um grupo de estudantes tenta combater a ameaça alienígena que mudou todos ao redor.
+                </div>
+                <div class="arrow" onmouseover="showSynopsis(this)" onmouseout="hideSynopsis(this)">ㅤㅤㅤㅤㅤ▼ㅤㅤㅤㅤ</div>
+              
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalProva">Assistir</button>
+                  
+                </div>
+                <small class="textosecundario">1h 44m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-title="A viagem de Chihiro">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./Album/img/a-viagem-de-chihiro.png" alt="">
+            
+            <div class="card-body">
+              <p class="Titulo">A viagem de Chihiro</p>
+              <p class="tipofilmes">Fantasia/Aventura 2001 </p>
+              <div class="synopsis-container">
+                <div class="synopsis">
+                  Chihiro e seus pais estão se mudando para uma cidade diferente. A caminho da nova casa, o pai decide pegar um atalho. Eles se deparam com uma mesa repleta de comida, embora ninguém esteja por perto. Chihiro sente o perigo, mas seus pais começam a comer. Quando anoitece, eles se transformam em porcos. Agora, apenas Chihiro pode salvá-los.
+                </div>
+                <div class="arrow" onmouseover="showSynopsis(this)" onmouseout="hideSynopsis(this)">ㅤㅤㅤㅤㅤ▼ㅤㅤㅤㅤ</div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalViagemChihiro">Assistir</button>
+                </div>
+                <small class="textosecundario">2h 5m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+        <div class="col" data-title="Panico">
+          <div class="card shadow-sm">
+            
+            <img class="bd-placeholder-img card-img-top" src="./Album/img/panicoimg2.png" alt="">
+            <div class="card-body">
+              <p class="Titulo">Pânico</p>
+              <p class="tipofilmes">Terror/Mistério 1996</p>
+              <div class="synopsis-container">
+                <div class="synopsis">
+                  Um grupo de jovens enfrenta um assassino mascarado que testa seus conhecimentos sobre filmes de terror. A pequena cidade de Woodsboro nunca mais será a mesma.
+                </div>
+                <div class="arrow" onmouseover="showSynopsis(this)" onmouseout="hideSynopsis(this)">ㅤㅤㅤㅤㅤ▼ㅤㅤㅤㅤ</div>
+              
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalPanico">Assistir</button>
+                  
+                </div>
+                <small class="textosecundario">1h 50m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-title="A origem">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./Album/img/a-origem2.png" alt="">
+            <div class="card-body">
+              <p class="Titulo">A origem</p>
+              <p class="tipofilmes">Ficção científica/Ação 2010</p>
+              <div class="synopsis-container">
+                <div class="synopsis">
+                  Dom Cobb é um ladrão com a rara habilidade de roubar segredos do inconsciente, obtidos durante o estado de sono. Impedido de retornar para sua família, ele recebe a oportunidade de se redimir ao realizar uma tarefa aparentemente impossível: plantar uma ideia na mente do herdeiro de um império. Para realizar o crime perfeito, ele conta com a ajuda do parceiro Arthur, o discreto Eames e a arquiteta de sonhos Ariadne. Juntos, eles correm para que o inimigo não antecipe seus passos.
+                </div>
+                <div class="arrow" onmouseover="showSynopsis(this)" onmouseout="hideSynopsis(this)">ㅤㅤㅤㅤㅤ▼ㅤㅤㅤㅤ</div>
+              
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalaOrigem">Assistir</button>
+                  
+                </div>
+                <small class="textosecundario">2h 28m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-title="O senhor dos aneis">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./Album/img/senhordosaneis.png" alt="">
+            <div class="card-body">
+            
+              <p class="Titulo">O Senhor dos Anéis: A Sociedade do Anel</p>
+              <p class="tipofilmes">Fantasia/Aventura 2001</p>
+              <div class="synopsis-container">
+                <div class="synopsis">
+                  Em uma terra fantástica e única, um hobbit recebe de presente de seu tio um anel mágico e maligno que precisa ser destruído antes que caia nas mãos do mal. Para isso, o hobbit Frodo tem um caminho árduo pela frente, onde encontra perigo, medo e seres bizarros. Ao seu lado para o cumprimento desta jornada, ele aos poucos pode contar com outros hobbits, um elfo, um anão, dois humanos e um mago, totalizando nove seres que formam a Sociedade do Anel.
+                </div>
+                <div class="arrow" onmouseover="showSynopsis(this)" onmouseout="hideSynopsis(this)">ㅤㅤㅤㅤㅤ▼ㅤㅤㅤㅤ</div>
+              
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalSenhordosAneis">Assistir</button>
+
+                </div>
+                <small class="textosecundario">2h 58m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" data-title="Interestelar">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./Album/img/interestelar.png" alt="">
+            <div class="card-body">
+              <p class="Titulo">Interestelar</p>
+              <p class="tipofilmes">Ficção científica/Aventura 2014</p>
+              <div class="synopsis-container">
+                <div class="synopsis">
+                  As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.
+                </div>
+                <div class="arrow" onmouseover="showSynopsis(this)" onmouseout="hideSynopsis(this)">ㅤㅤㅤㅤㅤ▼ㅤㅤㅤㅤ</div>
+              
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalInterestelar">Assistir</button>
+                  
+                </div>
+                <small class="textosecundario">2h 49m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-title="bastardos inglorios">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./Album/img/bastardosinglorios.png" alt="">
+            <div class="card-body">
+              <p class="Titulo">Bastardos Inglórios</p>
+              <p class="tipofilmes">Guerra/Aventura 2009</p>
+              <div class="synopsis-container">
+                <div class="synopsis">
+                  Durante a Segunda Guerra Mundial, na França, judeus americanos espalham o terror entre o terceiro Reich. Ao mesmo tempo, Shosanna, uma judia que fugiu dos nazistas, planeja vingança quando um evento em seu cinema reunirá os líderes do partido.
+                </div>
+                <div class="arrow" onmouseover="showSynopsis(this)" onmouseout="hideSynopsis(this)">ㅤㅤㅤㅤㅤ▼ㅤㅤㅤㅤ</div>
+              
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalBastardosInglorios">Assistir</button>
+                  
+                </div>
+                <small class="textosecundario">2h 33m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-title="WALL-E">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./Album/img/wall-e.png" alt="">
+            <div class="card-body">
+              <p class="Titulo">WALL-E</p>
+              <p class="tipofilmes">Infantil/Ficção científica 2008</p>
+              <div class="synopsis-container">
+                <div class="synopsis">
+                  Após entulhar a Terra de lixo e poluir a atmosfera com gases tóxicos, a humanidade deixou o planeta e passou a viver em uma gigantesca nave. O plano era que o retiro durasse alguns poucos anos, com robôs sendo deixados para limpar o planeta. WALL-E é o último destes robôs, e sua vida consiste em compactar o lixo existente no planeta. Até que um dia surge repentinamente uma nave, que traz um novo e moderno robô: Eva. A princípio curioso, WALL-E se apaixona e resolve segui-la por toda a galáxia.
+                </div>
+                <div class="arrow" onmouseover="showSynopsis(this)" onmouseout="hideSynopsis(this)">ㅤㅤㅤㅤㅤ▼ㅤㅤㅤㅤ</div>
+              
+              
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalWall">Assistir</button>
+                  
+                </div>
+                <small class="text-textosecundario">1h 38m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-title="Requiem for a dream">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="./Album/img/requiemforadream.png" alt="">
+            <div class="card-body">
+              <p class="Titulo">Réquiem para um Sonho</p>
+              <p class="tipofilmes">Terror/Drama 2000</p>
+              <div class="synopsis-container">
+                <div class="synopsis">
+                  Enquanto o filho lida com sua própria batalha contra as drogas, Sara é convidada para participar de seu programa de TV favorito. Para poder usar o vestido preferido, começa a tomar pílulas para emagrecer e fica viciada.
+                </div>
+                <div class="arrow" onmouseover="showSynopsis(this)" onmouseout="hideSynopsis(this)">ㅤㅤㅤㅤㅤ▼ㅤㅤㅤㅤ</div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalRequiem">Assistir</button>
+                  
+                </div>
+                <small class="textosecundario">1h 42m</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalProva" tabindex="-1" aria-labelledby="modalProvaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalProvaLabel">Assistir: Prova Final</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe src="https://drive.google.com/file/d/1DOW5M62HXIg8pxYxoKDC3SzulHhVGgfI/preview" width="100%" height="480" allow="autoplay"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="modal fade" id="modalViagemChihiro" tabindex="-1" aria-labelledby="modalViagemChihiroLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalViagemChihiroLabel">Assistir: A Viagem de Chihiro</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe src="https://drive.google.com/file/d/1p9XPVt_3XcrMHoHeeMDjD6Vaii1UO3Hn/preview" width="100%" height="480" allow="autoplay"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalPanico" tabindex="-1" aria-labelledby="modalPanicoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalPanicoLabel">Assistir: Panico</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <iframe src="https://drive.google.com/file/d/1ciBMkvP5XsntL5cIBhmnCuABLuKfCqQM/preview" width="100%" height="480" allow="autoplay"></iframe>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modalaOrigem" tabindex="-1" aria-labelledby="modalaOrigemLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalaOrigemLabel">Assistir: A origem</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <iframe src="https://drive.google.com/file/d/1mZaHRNKgWwU5EizRwQPUsOCOhVBXFH41/preview" width="100%" height="480" allow="autoplay"></iframe>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modalSenhordosAneis" tabindex="-1" aria-labelledby="modalSenhordosAneisLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalSenhosdosAneisLabel">Assistir: O Senhor dos Anéis: A Sociedade do Anel  </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <iframe src="https://drive.google.com/file/d/1UBPNnPppHO5KupZt4in0xMoEMC-mwrjn/preview" width="100%" height="480" allow="autoplay"></iframe>
+          </div>
+      </div>_
+  </div>
+</div>
+<div class="modal fade" id="modalInterestelar" tabindex="-1" aria-labelledby="modalInterestelarLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalInterestelarLabel">Assistir: Interestelar  </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <iframe src="https://drive.google.com/file/d/1hrjLEbpfp1Lao6kGsfI4ftMI2phrLZ-c/preview" width="100%" height="480" allow="autoplay"></iframe>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modalBastardosInglorios" tabindex="-1" aria-labelledby="modalBastardosIngloriosLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalBastardosIngloriosLabel">Assistir: Bastardos Inglórios  </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <iframe src="https://drive.google.com/file/d/1JURoKdvgK8Y5Sg1HZ37X8jRfZLFg3qYB/preview" width="100%" height="480" allow="autoplay"></iframe>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modalWall" tabindex="-1" aria-labelledby="modalWallLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalWallLabel">Assistir: WALL-E  </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <iframe src="https://drive.google.com/file/d/1MiqOg2g2MbKRwexsa1xxF4Uxa6Y9-saJ/preview" width="100%" height="480" allow="autoplay"></iframe>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal fade" id="modalRequiem" tabindex="-1" aria-labelledby="modalRequiemLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="modalRequiemLabel">Assistir: Requiem para um sonho  </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <iframe src="https://drive.google.com/file/d/1THZKz9GHQrzi2Uyt4naco4xVTwK01-6f/preview" width="100%" height="480" allow="autoplay"></iframe>
+          </div>
+      </div>
+  </div>
+</div>
+  
+
+</main>
+
+<footer class="bg-dark text-white p-3">
+  <div class="container text-center">
+    <a href="#" class="d-flex align-items-center mb-2 text-decoration-none">
+      <i class="fas fa-info-circle fa-2x me-2"></i>
+      <span>Estamos nas redes sociais</span>
+    </a>
+  </div>
+</footer>
+<footer class="bg-dark text-white p-3">
+  <div class="container text-end"> 
+    <div class="d-flex justify-content-end"> 
+      <a href="https://www.instagram.com/maumausteffen" target="_blank" class="d-flex align-items-center mb-2 text-decoration-none me-3"> 
+        <i class="fab fa-instagram fa-2x me-2"></i> 
+        <span>Instagram</span>
+      </a>
+      <a href="https://github.com/mauriciostf" target="_blank" class="d-flex align-items-center mb-2 text-decoration-none"> 
+        <i class="fab fa-github fa-2x me-2"></i> 
+        <span>GitHub</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+
+  </div>
+  <script>
+    function searchMovie() {
+        let searchQuery = document.getElementById('searchBox').value.toLowerCase().trim();
+        let movies = document.querySelectorAll('.col');
+        let found = false;
+
+        movies.forEach(function (movie) {
+            let title = movie.getAttribute('data-title').toLowerCase();
+
+            if (title.includes(searchQuery) && searchQuery !== '') {
+                movie.style.display = '';
+                found = true;
+            } else {
+                movie.style.display = 'none';
+            }
+        });
+
+        if (!found && searchQuery !== '') {
+            alert('Nenhum filme encontrado para: "' + searchQuery + '"');
+        }
+    }
+
+    function showAllMovies() {
+        let movies = document.querySelectorAll('.col');
+        
+        movies.forEach(function (movie) {
+            movie.style.display = ''; 
+        });
+
+        document.getElementById('searchBox').value = ''; 
+    }
+
+    document.getElementById('searchBox').addEventListener('input', function () {
+        searchMovie(); 
+    });
+    function reloadPage() {
+        location.reload(); 
+    }
+</script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>_
+  <script>
+
+        function showSynopsis(element) {
+            const synopsis = element.previousElementSibling;
+            synopsis.style.display = 'block';
+        }
+
+        function hideSynopsis(element) {
+            const synopsis = element.previousElementSibling;
+            synopsis.style.display = 'none';
+        }
+  </script>
+    </body>
+</html>
+
+</body>
+</html>
